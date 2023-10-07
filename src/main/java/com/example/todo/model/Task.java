@@ -10,13 +10,12 @@ import lombok.Data;
 
 public class Task {
     @Id
-//    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String todo;
-
-    private String completionDate;
-    private Boolean done;
+    private String deadLine;
+    private Boolean isCompleted;
 
 
 

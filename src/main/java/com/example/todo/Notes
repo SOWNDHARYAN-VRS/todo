@@ -1,0 +1,22 @@
+-----------------------------Guidelines to follow while naming API endpoints-------------------------------
+
+1-Use nouns.
+
+2-Use intuitive, clear names.
+
+3-Use lowercase letters.
+
+4-Avoid special characters.
+
+5-Use forward slash (/).
+
+6-Separate words with hyphens.
+
+7-Don’t use file extension.
+
+8-Use camelCase(writing multi-word identifiers with the first word in lowercase and subsequent
+words in uppercase, with no spaces or underscores between them) for parameters.
+
+9-Use API versioning(when we get new features or updating existing features ,we have to give support to the
+old users so we have to version the api using strategies like uri versioning / header versioning
+/parameter versioning).

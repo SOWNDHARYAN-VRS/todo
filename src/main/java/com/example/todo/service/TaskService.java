@@ -1,22 +1,12 @@
 package com.example.todo.service;
 
+import com.example.todo.dto.ApiResponse;
 import com.example.todo.model.Task;
-import com.example.todo.repositary.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.http.ResponseEntity;
 
-
-@Service
-public class TaskService {
-
-    @Autowired
-    private  UserRepository userRepository;
-
-    public TaskService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
-    public Task addNewTask(Task task){
-        userRepository.save(task);
-        return task;
-    }
+public interface TaskService {
+    public ResponseEntity<ApiResponse> addNewTask(Task task);
+    public ResponseEntity<ApiResponse> findAll();
+    public void deleteById(int id);
+    Iterable<Task> findByDate(String date);
 }
